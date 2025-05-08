@@ -3,44 +3,38 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My Portfolio</title>
-	<link rel="stylesheet" href="style.css">
-
-	
+	<title>Rock Paper Scissors Game</title>
+	<link rel= "stylesheet" href="style.css">
 </head>
-<body>
-	<header>
-		<h1>My Portfolio</h1>
-		<nav>
-			<a href="#about">About</a>
-			<a href="#projects">Projects</a>
-			<a href="#contact">Contact</a>
-		</nav>
-	</header>
-	<section id=""about" class="about">
-		<h2>About me</h2>
-		<p> Hi, I am a web development student learning HTML and CSS.I enjoy building clean and simple website.</p>
-	</section>
-	<section id="projects" class="Project">
-		<h2>Projects</h2>
-		<div class="project">
-			<h4>Project One</h4>
-			<p>This is a simple project description.</p>
-			<div class="project">
-				<h4>Project Two</h4>
-				<p>This is another project.</p>
-				<img src="weather_photo.jpg">
-			</div>
+<body> 
+	<h1>Rock Paper Scissors</h1>
+	<div class="choices">
+     <div class="choice" id="rock">
+		<img src="rock.png">
+	 </div>
+	 <div class="choice" id="paper">
+		<img src="paper.png">
+
+	 </div>
+	 <div class="choice" id="scissors">
+		<img src="scissors.png">
+	 </div>
+	</div>
+
+	<div class="score-board">
+		<div class="score">
+			<p id="user-score">0</p>
+			<p>You</p>
 		</div>
-	</section>
-	<section id="contact" class="contact">
-		<h2>Contact Me</h2>
-		<p>Email: nisha14kumari2006@gmail.com</p>
-		<p>phone: 6287824804</p>
-	</section>
-	<footer>
-		<p>&#169 2025 My Portfolio. All rights reserved.</p>
-	</footer>
-	
+		<div class="score">
+			<p id="comp-score">0</p>
+			<p>comp</p>
+		</div>
+	</div>
+
+<div class="msg-container">
+	<p id="msg">Play your move</p>
+</div>
 </body>
+<script src="script.js"></script>
 </html>
